@@ -33,6 +33,7 @@ nav {
     position:fixed;
     background-color: #FFFFFF;
     width: 100%;
+    z-index: 2
 }
 
 
@@ -175,7 +176,7 @@ tr h3{
     width: 100%;
     color: #262626;
     padding-top: 5%;
-    margin-left: 30%;
+    margin-left: 25%;
 
 }
 
@@ -204,72 +205,263 @@ img[type="box"] {
     color: #0066cc;
     border: solid 2px #0066cc;
 }
+/**** contact ****/
+.contact-content{
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+    background: #1b2630;
+  }
+  .contact-content .contact-title h4{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+  }
+  .contact{
+    max-width: 100%;
+    margin: auto;
+  }
+  .contact input,.contact textarea{
+    width: 100%;
+    padding: 30px;
+    border: 0;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  
+  .contact .submit{
+    width: auto;
+    background-color: #876c91;
+    padding: 10px 40px;
+    font-weight:bold ;
+    font-size: 18px;
+  }
+  .contact .submit:hover{
+    transform: scale(1.1);
+    background: #3f464c;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #msg{
+    color: #fff;
+    font-size: 20px;
+    margin-top: -8px;
+    display: block;
+  }
 
 
-/* CSS for smaller screens */
-@media only screen and (max-width: 1080px) {
+/* Responsive adjustments */
+@media (max-width: 768px) {
     .logo {
-        width: 150px;
+        width: 100px; /* Adjust logo size */
+    }
+
+    nav ul li {
+        margin: 10px 30px; /* Reduce margin between nav items */
+    }
+
+
+    .header-text, .about-right {
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px; /* Adjust padding for text sections */
+        text-align: center;
     }
     
-    nav ul li {
-        margin: 10px 50px;
-    }
-
-    .header-text {
-        margin-top: 10%;
-    }
-
-    .selfphoto {
-        float: none;
-        margin: 0 auto;
-        display: block;
-        margin-top: 10%;
-        width: 300px;
-        height: auto;
-    }
-
-    .about-img img {
-        width: 300px;
-        height: auto;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .about-right h2 {
-        margin-left: 0;
-        font-size: 25px;
+    .header-text h1, .about-right h2 {
+        font-size: 24px; /* Adjust font size for headers */
         text-align: center;
     }
+    #about {
+        padding: 40px 0;
+    }
 
+    table {
+        display: block;
+        width: 100%;
+    }
+
+    table img {
+        width: 90%; /* Adjust based on preference */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center images */
+    }
+
+    table td {
+        display: block;
+        width: 100%;
+        text-align: center; /* Center content */
+        padding: 10px 0; /* Add some spacing */
+    }
+
+    .works-download {
+        display: inline-block; /* Ensure proper spacing */
+        margin: 10px 0; /* Adjust margin for better spacing */
+    
+    }
+    .header-text p, .about-right p {
+        font-size: 20px; /* Adjust paragraph font size */
+    }
+
+    .selfphoto, .about-img img {
+        width: 50; /* Make images responsive */
+        height: 50;
+        margin: 20px auto; /* Center images */
+    }
+
+    .about-left,
+    .about-right {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    .about-img img {
+        width: 80%; /* Adjust based on preference */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .about-right h2,
     .about-right p {
         margin-left: 0;
-        font-size: 18px;
+        margin-top: 20px;
+    }
+    
+    .button {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px; /* Increase margin for better separation */
+    }
+
+    .button a {
+        padding: 10px 20px; /* Adjust padding */
+        font-size: 16px; /* Adjust font size */
+        margin: 10px auto; /* Adjust margin for auto centering */
+        display: block; /* Block display for full width */
+        text-align: center; /* Center text */
+    }
+
+
+    table, table img {
+        width: 100%; /* Make table and images within it responsive */
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Stack nav items vertically */
+    }
+
+    /* Adjust contact form input sizes */
+    .contact input, .contact textarea {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .logo {
+        width: 100px; /* Adjust logo size */
+    }
+
+    nav ul li {
+        margin: 10px 30px; /* Reduce margin between nav items */
+    }
+
+
+    .header-text, .about-right {
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px; /* Adjust padding for text sections */
         text-align: center;
+    }
+    
+    .header-text h1, .about-right h2 {
+        font-size: 24px; /* Adjust font size for headers */
+        text-align: center;
+    }
+    #about {
+        padding: 40px 0;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+    }
+
+    table img {
+        width: 90%; /* Adjust based on preference */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center images */
+    }
+
+    table td {
+        display: block;
+        width: 100%;
+        text-align: center; /* Center content */
+        padding: 10px 0; /* Add some spacing */
+    }
+
+    .works-download {
+        display: inline-block; /* Ensure proper spacing */
+        margin: 10px 0; /* Adjust margin for better spacing */
+    
+    }
+    .header-text p, .about-right p {
+        font-size: 20px; /* Adjust paragraph font size */
+    }
+
+    .selfphoto, .about-img img {
+        width: 50; /* Make images responsive */
+        height: 50;
+        margin: 20px auto; /* Center images */
+    }
+
+    .about-left,
+    .about-right {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    .about-img img {
+        width: 80%; /* Adjust based on preference */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .about-right h2,
+    .about-right p {
+        margin-left: 0;
+        margin-top: 20px;
     }
 
     .button {
         flex-direction: column;
         align-items: center;
-        margin: 10% auto;
+        margin-top: 30px; /* Increase margin for better separation */
     }
 
     .button a {
-        padding: 10px 30px;
-        font-size: 1.5rem;
+        padding: 10px 20px; /* Adjust padding */
+        font-size: 16px; /* Adjust font size */
+        margin: 10px auto; /* Adjust margin for auto centering */
+        display: block; /* Block display for full width */
+        text-align: center; /* Center text */
     }
 
-    table img {
-        width: 300px;
+
+    table, table img {
+        width: 100%; /* Make table and images within it responsive */
         height: auto;
     }
 
-    tr h3 {
-        margin-left: 0;
-        text-align: center;
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Stack nav items vertically */
     }
 
-    .works-download {
-        margin-left: 0;
+    /* Adjust contact form input sizes */
+    .contact input, .contact textarea {
+        padding: 15px;
     }
 }
