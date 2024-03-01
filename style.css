@@ -205,7 +205,8 @@ img[type="box"] {
     color: #0066cc;
     border: solid 2px #0066cc;
 }
-/**** contact ****/
+
+/**** Contact ****/
 .contact-content{
     padding: 100px 0;
     color: #fff;
@@ -250,8 +251,19 @@ img[type="box"] {
     display: block;
   }
 
+  .mySocials a {
+    text-decoration: none;
+  }
 
-/* Responsive */
+  .mySocials a:hover {
+    color: #FFFFFF;
+    transition: 0.6s;
+}
+.mySocials a:active {
+    color: #FDE581;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .logo {
         width: 100px; 
@@ -259,6 +271,112 @@ img[type="box"] {
 
     nav ul li {
         margin: 10px 30px; 
+    }
+
+
+    .header-text, .about-right {
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+    
+    .header-text h1, .about-right h2 {
+        font-size: 24px; 
+        text-align: center;
+    }
+    #about {
+        padding: 40px 0;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+    }
+
+    table img {
+        width: 90%; 
+        height: auto; 
+        margin: 0 auto; 
+    }
+
+    table td {
+        display: block;
+        width: 100%;
+        text-align: center; 
+        padding: 10px 0; 
+    }
+
+    .works-download {
+        display: inline-block; 
+        margin: 10px 0; 
+    
+    }
+    .header-text p, .about-right p {
+        font-size: 20px; 
+    }
+
+    .selfphoto, .about-img img {
+        width: 50; /* Make images responsive */
+        height: 50;
+        margin: 20px auto; 
+    }
+
+    .about-left,
+    .about-right {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    .about-img img {
+        width: 80%; 
+        height: auto; 
+        margin: 0 auto; 
+    }
+
+    .about-right h2,
+    .about-right p {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .button {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px; 
+    }
+
+    .button a {
+        padding: 10px 20px; 
+        font-size: 16px; 
+        margin: 10px auto; 
+        display: block; 
+        text-align: center; 
+    }
+
+
+    table, table img {
+        width: 100%; /* Make table and images responsive */
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .contact input, .contact textarea {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .logo {
+        width: 100px; 
+    }
+
+    nav ul li {
+        margin: 10px 30px;
     }
 
 
@@ -292,7 +410,7 @@ img[type="box"] {
         display: block;
         width: 100%;
         text-align: center; 
-        padding: 10px 0;
+        padding: 10px 0; 
     }
 
     .works-download {
@@ -301,117 +419,11 @@ img[type="box"] {
     
     }
     .header-text p, .about-right p {
-        font-size: 20px;
-    }
-
-    .selfphoto, .about-img img {
-        width: 50; 
-        height: 50;
-        margin: 20px auto; 
-    }
-
-    .about-left,
-    .about-right {
-        text-align: center;
-        margin: auto;
-        width: 100%;
-    }
-    .about-img img {
-        width: 80%; 
-        height: auto; 
-        margin: 0 auto; 
-    }
-
-    .about-right h2,
-    .about-right p {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-    
-    .button {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 30px; 
-    }
-
-    .button a {
-        padding: 10px 20px; 
-        font-size: 16px;
-        margin: 10px auto; 
-        display: block; 
-        text-align: center; 
-    }
-
-
-    table, table img {
-        width: 100%; 
-        height: auto;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    .contact input, .contact textarea {
-        padding: 15px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .logo {
-        width: 100px; 
-    }
-
-    nav ul li {
-        margin: 10px 30px; 
-    }
-
-
-    .header-text, .about-right {
-        padding-top: 10px;
-        padding-left: 15px;
-        padding-right: 15px; 
-        text-align: center;
-    }
-    
-    .header-text h1, .about-right h2 {
-        font-size: 24px;
-        text-align: center;
-    }
-    #about {
-        padding: 40px 0;
-    }
-
-    table {
-        display: block;
-        width: 100%;
-    }
-
-    table img {
-        width: 90%;
-        height: auto; 
-        margin: 0 auto; 
-    }
-
-    table td {
-        display: block;
-        width: 100%;
-        text-align: center; 
-        padding: 10px 0; 
-    }
-
-    .works-download {
-        display: inline-block; 
-        margin: 10px 0;
-    
-    }
-    .header-text p, .about-right p {
         font-size: 20px; 
     }
 
     .selfphoto, .about-img img {
-        width: 50; 
+        width: 50; /* Make images responsive */
         height: 50;
         margin: 20px auto; 
     }
@@ -445,21 +457,22 @@ img[type="box"] {
         font-size: 16px; 
         margin: 10px auto; 
         display: block; 
-        text-align: center;
+        text-align: center; 
     }
 
 
     table, table img {
-        width: 100%; 
+        width: 100%;
         height: auto;
     }
 
     nav ul {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 
     .contact input, .contact textarea {
         padding: 15px;
     }
 }
+
