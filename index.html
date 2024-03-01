@@ -43,7 +43,7 @@
             </div>
 
             <div class="button">
-                <a href="Resume - Javier.pdf" class="download" download>DOWNLOAD CV</a>
+                <a href="Resume - Javier.pdf" class="download" target="_blank" download>DOWNLOAD CV</a>
                 <a href="#aboutme4" class="download">Contact Me</a>
             </div>
         </div>
@@ -55,9 +55,9 @@
         <h1 class="title2" id="works3">Works</h1>
         <table>
             <tr>
-                <td><img src="calculator.PNG" alt="calculator" type="box"><h3>Calculator</h3><br><a href="https://ahnwonyoung1.github.io/calculator/" class="works-download">LIVE DEMO</a></td>
-                <td><img src="landing.PNG" alt="page" type="box"><h3>Landing</h3><br><a href="https://ahnwonyoung1.github.io/landing-page/" class="works-download">LIVE DEMO</a></td>
-                <td><img src="todolist.PNG" alt="todo" type="box"><h3>Todo List</h3><br><a href="https://ahnwonyoung1.github.io/to-do-list/" class="works-download">LIVE DEMO</a></td>
+                <td><img src="calculator.PNG" alt="calculator" type="box"><h3>Calculator</h3><br><a href="https://ahnwonyoung1.github.io/calculator/" class="works-download" target="_blank">LIVE DEMO</a></td>
+                <td><img src="landing.PNG" alt="page" type="box"><h3>Landing</h3><br><a href="https://ahnwonyoung1.github.io/landing-page/" class="works-download" target="_blank">LIVE DEMO</a></td>
+                <td><img src="todolist.PNG" alt="todo" type="box"><h3>Todo List</h3><br><a href="https://ahnwonyoung1.github.io/to-do-list/" class="works-download" target="_blank">LIVE DEMO</a></td>
             </tr>
         </table>
 
@@ -75,9 +75,21 @@
                 <input type="submit" value="Send Message" class="submit">
             </form>
             <span id="msg"></span>
+            <h2>Email: joshdaniel420a@gmail.com</h2>
         </div>
     </div>
 </section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Select all links with the class "works-download"
+      var links = document.querySelectorAll(".works-download");
+    
+      for (var i = 0; i < links.length; i++) {
+        links[i].setAttribute("target", "_blank");
+      }
+    });
+    </script>
 
 </body>
 </html>
