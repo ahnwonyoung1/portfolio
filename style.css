@@ -250,13 +250,15 @@ img[type="box"] {
     margin-top: -8px;
     display: block;
   }
-
+  
+/* Socials*/
   .mySocials a {
     text-decoration: none;
+    color: #fff;
   }
 
   .mySocials a:hover {
-    color: #FFFFFF;
+    color: #0066cc;
     transition: 0.6s;
 }
 .mySocials a:active {
